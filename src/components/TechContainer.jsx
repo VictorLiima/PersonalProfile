@@ -1,16 +1,17 @@
-import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact, DiPython, DiMongodb } from "react-icons/di";
+import { DiJsBadge, DiNodejsSmall, DiMysql, DiPython, DiMongodb } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
+import { FaRobot } from "react-icons/fa";
 
 import "../styles/components/TechContainer.sass"
 
 const technologies = [
-    { id: "html", name: "HTML5", icon: <DiHtml5 /> },
-    { id: "css", name: "CSS3", icon: <DiCss3 /> },
-    { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-    { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
-    { id: "mysql", name: "MySQL", icon: <DiMysql /> },
-    { id: "react", name: "React", icon: <DiReact /> },
-    { id: "python", name: "Python", icon: <DiPython /> },
-    { id: "mongodb", name: "MongoDb", icon: <DiMongodb /> },
+    { id: "js", name: "JavaScript", icon: <DiJsBadge />, time: "2 Anos"},
+    { id: "node", name: "Node.js", icon: <DiNodejsSmall />, time: "2 Anos e meio"},
+    { id: "mysql", name: "MySQL", icon: <DiMysql />, time: "2 Anos e meio"},
+    { id: "python", name: "Python", icon: <DiPython />, time: "3 Anos e meio"},
+    { id: "mongodb", name: "MongoDb", icon: <SiMongodb />,time: "2 Anos"},
+    { id: "automation", name: "RPA - Automações", icon: <FaRobot/>,time: "3 Anos e meio"}
+
 ];
 
 const TechContainer = ()=> {
@@ -23,9 +24,8 @@ const TechContainer = ()=> {
                         {technology.icon}
                         <div className="technology-info">
                             <h3>{technology.name}</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
+                            <h3>Experiência</h3>
+                            <p>{technology.time}</p>
                         </div>
                     </div>
                 ))}
