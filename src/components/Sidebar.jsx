@@ -3,6 +3,8 @@ import InformationContainer from "./InformationContainer";
 
 import Avatar from "../files/profile.jpg";
 
+import MeuCV from "../files/victor_cv.pdf"
+
 import "../styles/components/Sidebar.sass";
 
 const Sidebar = () => {
@@ -12,7 +14,7 @@ const Sidebar = () => {
       <p className="title">Desenvolvedor Pleno</p>
       <SocialNetworkContainer />
       <InformationContainer />
-      <a href="src/files/victor_cv.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+      <a href={MeuCV} download="Victor_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn">
         Download Currículo
       </a>
     </aside>
